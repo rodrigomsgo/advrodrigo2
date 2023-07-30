@@ -28,8 +28,6 @@
             width: 500px; /*Largura*/
             height: 500px; /*Altura*/
             background-color: rgb(0, 115, 0); /* Verde em RGB */
-            margin: 0 auto;
-            margin-top: 50px; /*Espaçamento do topo*/
             padding: 10px; /* Espaçamento interno para os itens da lista */
             display: flex;
             align-items: center; /* Centraliza verticalmente os itens */
@@ -59,12 +57,20 @@
             color: #c8a80e; /* Mantém a cor original */
         }
 
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px; /* Espaçamento entre o menu e a foto */
+            padding: 50px 0; /* Espaçamento do topo e da base */
+}
+
         .foto {
             background: url('imagem-index.jpeg') no-repeat center center; /* Substitua 'link_para_sua_imagem' com o URL da sua imagem */
             background-size: cover; /* Isso irá preencher o div com a imagem, preservando sua proporção */
             width: 500px;
             height: 500px;
-            margin-top: 50px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
         
@@ -74,16 +80,17 @@
 <body>
     <h1>Rodrigo Magalhães dos Santos</h1>
     <p>Sociedade Individual de Advocacia</p>
-    <div class="menu">
-        <ul>
-            <li><a href="2-o-escritorio-site-2.html">O Escritório</a></li>
-            <li><a href="3-areas-de-atuacao-site-2">Áreas de atuação</a></li>
-            <li><a href="4-noticias-site-2.html">Notícias</a></li>
-            <li><a href="pagina_contato.html">Contato</a></li>
-        </ul>
-    </div>
-
+    <div class="content">
         <div class="foto"></div>
+        <div class="menu">
+            <ul>
+                <li><a href="2-o-escritorio-site-2.html">O Escritório</a></li>
+                <li><a href="3-areas-de-atuacao-site-2">Áreas de atuação</a></li>
+                <li><a href="4-noticias-site-2.html">Notícias</a></li>
+                <li><a href="pagina_contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </div>
 
 </body>
 
