@@ -9,10 +9,20 @@
             /*background-color: darkgreen;*/
             background-image: url("index2.webp");
             background-size: contain; /* Para ajustar o tamanho da imagem ao tamanho da tela */
-            background-size: 200% auto;
+            background-size: 100% auto;
             background-repeat: no-repeat; /* Para evitar que a imagem se repita */
             background-position: center center; /* Para centralizar a imagem na tela */
             background-attachment: fixed; /* Para fixar a imagem no fundo enquanto a página é rolada */
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Cor preta semitransparente (altere o valor alpha para ajustar a intensidade) */
         }
 
         h1 {
